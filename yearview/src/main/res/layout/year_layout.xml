@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/llRoot"
+              android:layout_width="150dp"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg_selected"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tx_year"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:textColor="#5B5B5B"
+        android:textSize="@dimen/year_text_size"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/image_card1"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/normal_margin"
+        android:layout_marginEnd="@dimen/default_padding_mobile"
+        android:layout_marginStart="@dimen/default_padding_mobile"
+        android:layout_marginTop="12dp"
+        android:visibility="gone"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:id="@+id/image_container1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:scaleType="centerCrop"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/image_card2"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/normal_margin"
+        android:layout_marginEnd="@dimen/default_padding_mobile"
+        android:layout_marginStart="@dimen/default_padding_mobile"
+        android:visibility="gone"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:id="@+id/image_container2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scaleType="centerCrop"/>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="YearLayout">
+        <attr name="year_text_size" format="dimension"/>
+        <attr name="row_text_size" format="dimension"/>
+        <attr name="description_text_size" format="dimension"/>
+        <attr name="year_background_color" format="color"/>
+        <attr name="year_title_color" format="color"/>
+        <attr name="year_row_text_color" format="color"/>
+        <attr name="min_year" format="integer"/>
+        <attr name="max_year" format="integer"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:background="@android:color/transparent"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <com.vrgsoft.yearview.YearView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <com.vrgsoft.yearview.ExpanderView
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/expander_margin"/>
+
+        <com.vrgsoft.yearview.ClickView
+            android:id="@+id/click"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+</HorizontalScrollView>

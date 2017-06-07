@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.vrgsoft.timelinesample.MainActivity">
+
+    <com.vrgsoft.yearview.YearLayout
+        android:id="@+id/year_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="horizontal"
+        app:description_text_size="8sp"
+        app:row_text_size="14sp"
+        app:year_text_size="9sp"
+        />
+</RelativeLayout>
