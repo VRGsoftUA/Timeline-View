@@ -1,5 +1,5 @@
 # Timeline View
-
+<img src="https://github.com/VRGsoftUA/Timeline-View/blob/master/timeline1.gif" alt="alt text" style="width:200;height:200">
 #### [HIRE US](http://vrgsoft.net/)
 
 # Usage
