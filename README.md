@@ -11,12 +11,10 @@
 ```gradle
 allprojects {
     repositories {
-        maven {
-            url 'https://dl.bintray.com/pawlo2102/yearview/'
-        }
+        maven { url 'https://jitpack.io' }
     }
 }
-compile 'com.github.vrgsoftua:yearview:1.0.0'
+compile 'com.github.VRGsoftUA:Timeline-View:-SNAPSHOT'
 ```
 2. Include the YearLayout widget in your layout.
 
