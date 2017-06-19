@@ -8,7 +8,16 @@
 *For a working implementation, Have a look at the Sample Project - app*
 
 1. Include the library as local library project.
-
+```gradle
+allprojects {
+    repositories {
+        maven {
+            url 'https://dl.bintray.com/pawlo2102/yearview/'
+        }
+    }
+}
+compile 'com.github.vrgsoftua:yearview:1.0.0'
+```
 2. Include the YearLayout widget in your layout.
 
 	```xml
