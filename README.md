@@ -14,8 +14,13 @@ allprojects {
         maven { url 'https://jitpack.io' }
     }
 }
+
+dependencies {
+
 compile 'com.github.VRGsoftUA:Timeline-View:-SNAPSHOT'
-```
+
+}
+
 2. Include the YearLayout widget in your layout.
 
 	```xml
