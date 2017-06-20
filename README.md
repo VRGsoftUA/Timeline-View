@@ -17,7 +17,7 @@ allprojects {
 
 dependencies {
 
-compile 'com.github.VRGsoftUA:Timeline-View:-SNAPSHOT'
+compile 'com.github.VRGsoftUA:Timeline-View:1.0.0'
 
 }
 ```
