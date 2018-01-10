@@ -16,15 +16,13 @@ allprojects {
 }
 
 dependencies {
-
-compile 'com.github.VRGsoftUA:Timeline-View:1.0.0'
-
+compile 'com.github.VRGsoftUA:Timeline-View-Kotlin:1.0'
 }
 ```
 2. Include the YearLayout widget in your layout.
 
 	```xml
-      <com.vrgsoft.yearview.YearLayout
+      <net.vrgsoft.timelineviewkotlin.YearLayout
         android:id="@+id/year_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,10 +40,10 @@ compile 'com.github.VRGsoftUA:Timeline-View:1.0.0'
   ```
   
 4. In your `onCreate` method refer to the View and setup YearLayout.Builder.Also you can implement OnRowClickListener for handling clicks 
-	```java
+	```kotlin
     
-        YearLayout.Builder builder = new YearLayout.Builder();
-        builder.setYears(mModels)
+        val builder = YearLayout.Builder()
+        builder.setYears(mModels as ArrayList<YearModel>)
                 .setMaxYear(2017)
                 .setMinYear(1860)
                 .attachToActivity(this)
@@ -53,28 +51,30 @@ compile 'com.github.VRGsoftUA:Timeline-View:1.0.0'
                 .setYearBackgroundColor(R.color.line_color)
                 .setYearTitleColor(R.color.colorPrimary)
                 .setYearRowTextColor(R.color.colorPrimaryDark)
-                .create();
-        mYearLayout.setBuilder(builder);
+                .create()
+        mYearLayout!!.setBuilder(builder)
     }
 
-    @Override
-    public void onClick(int year, ClickView.ItemHolder view) {
-        Toast.makeText(this, "Clicked on year " + year, Toast.LENGTH_SHORT).show();
+    override fun onClick(year: Int, view: ClickView.ItemHolder) {
+        Toast.makeText(this, "Clicked on year " + year, Toast.LENGTH_SHORT).show()
     }
      ```
-     #### Customisation 
-     You can add fields via xml or via Builder.
+#### Customisation 
+You can add fields via xml or via Builder.
+     
 Supported fields:
-     ```xml
-        <attr name="year_text_size" format="dimension"/>
-        <attr name="row_text_size" format="dimension"/>
-        <attr name="description_text_size" format="dimension"/>
-        <attr name="year_background_color" format="color"/>
-        <attr name="year_title_color" format="color"/>
-        <attr name="year_row_text_color" format="color"/>
-        <attr name="min_year" format="integer"/>
-        <attr name="max_year" format="integer"/>
-     ```
-     #### Contributing
+
+| Field  | Type |
+| ------------- | ------------- |
+| year_text_size | dimension |
+| row_text_size | dimension |
+| description_text_size | dimension |
+| year_background_color | color |
+| year_title_color | color |
+| year_row_text_color | color |
+| min_year | integer |
+| max_year | integer |
+
+ #### Contributing
 * Contributions are always welcome
 * If you want a feature and can code, feel free to fork and add the change yourself and make a pull request
